@@ -9,6 +9,8 @@ import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.Objects;
 
+
+
 public abstract class Animal {
 
     protected String codigo;
@@ -16,7 +18,14 @@ public abstract class Animal {
     private char sexo;
     private double peso;
 
-    public Animal(String codigo, String fechaNacimiento, char sexo, double peso) {
+/**
+ * Constructor de la clase Animal.
+ * @param codigo Código identificativo del animal.
+ * @param fechaNacimiento Fecha de nacimiento en formato ISO (yyyy-MM-dd).
+ * @param sexo Sexo del animal ('M' o 'H').
+ * @param peso Peso del animal en kilogramos.
+ */
+public Animal(String codigo, String fechaNacimiento, char sexo, double peso) { {
 
         LocalDate fecha;
 
