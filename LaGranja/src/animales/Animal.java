@@ -25,8 +25,7 @@ public abstract class Animal {
  * @param sexo Sexo del animal ('M' o 'H').
  * @param peso Peso del animal en kilogramos.
  */
-public Animal(String codigo, String fechaNacimiento, char sexo, double peso) { {
-
+public Animal(String codigo, String fechaNacimiento, char sexo, double peso) { 
         LocalDate fecha;
 
         if (!codigo.matches("[0-9a-z]{5}") || (sexo != 'M' && sexo != 'H') || (peso <= 0)) {
