@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package animales;
+package animals;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
@@ -127,10 +127,7 @@ public Animal(String codigo, String fechaNacimiento, char sexo, double peso) {
         if (!Objects.equals(this.codigo, other.codigo)) {
             return false;
         }
-        if (!Objects.equals(this.fechaNacimiento, other.fechaNacimiento)) {
-            return false;
-        }
-        return true;
+        return Objects.equals(this.fechaNacimiento, other.fechaNacimiento);
     }
 
     @Override
